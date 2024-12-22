@@ -1,0 +1,42 @@
+{
+  "name": "hr-gpt",
+  "version": "1.0.0",
+  "description": "This project utilizes LLM and RAG for employee management HR task.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:dev": "ts-node index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "LLM",
+    "RAG",
+    "HR",
+    "Employee management",
+    "Nodejs",
+    "Langchain",
+    "Mongo",
+    "Vector"
+  ],
+  "author": "Jayesh Patidar <j.patidar1910@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@langchain/langgraph": "^0.2.34",
+    "@langchain/langgraph-checkpoint-mongodb": "^0.0.4",
+    "@langchain/mistralai": "^0.2.0",
+    "@langchain/mongodb": "^0.1.0",
+    "@llm-tools/embedjs": "^0.1.25",
+    "@llm-tools/embedjs-mistral": "^0.1.25",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "langchain": "^0.3.7",
+    "mongodb": "^6.12.0",
+    "zod": "^3.24.1"
+  }
+}
